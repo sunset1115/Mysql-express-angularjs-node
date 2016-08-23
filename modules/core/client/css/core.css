@@ -1,0 +1,218 @@
+.content {
+  margin-top: 0px;
+}
+
+.content .container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.undecorated-link:hover {
+  text-decoration: none;
+}
+[ng\:cloak],
+[ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+.header-profile-image {
+  opacity: 0.8;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.open .header-profile-image,
+a:hover .header-profile-image {
+  opacity: 1;
+}
+.user-header-dropdown-toggle {
+  padding-top: 11px !important;
+  padding-bottom: 11px !important;
+}
+.user-primary-account {
+  font-size: 30px;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+.error-text {
+  display: none;
+}
+.has-error .help-block.error-text {
+  display: block;
+}
+.has-error .help-inline.error-text {
+  display: inline;
+}
+
+
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-container {
+  background-image: url('../img/page-layouts/bg.png');
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position : center center;
+}
+
+.landing-page .header-menu {
+  position: fixed;
+  float: right;
+  width: 40vw;
+  min-width: 600px;
+  top: 3.5vh;
+  right: 3.5vh;
+  height: 5.6vh;
+}
+
+.header-menu .header-button
+{
+  position: relative;
+  margin-left: 3vh;
+}
+.header-menu .header-button{
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 16pt;
+  text-decoration: blink;
+}
+
+.header-button .title-div {
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(35%);
+}
+
+.header-menu .header-button:hover {
+  color: black;
+  text-shadow: 1px 1px 2px white;
+}
+
+
+.header-menu .header-fixline {
+  height: 2px;
+  background: black;
+  -webket-box-shadow: 0px 2px 12px 2px rgba(50,50,50, 0.64);
+  -moz-box-shadow: 0px 2px 12px 2px rgba(50,50,50, 0.64);
+  box-shadow: 0px 2px 12px 2px rgba(50,50,50, 0.64);
+  margin-top: -5px;
+}
+
+.header-menu .login-btn {
+  top: 50%;
+  transform: translateY(35%);
+  border-radius: 18px;
+  background-color: black;
+  color: white;
+  box-shadow: 0px 2px 12px 2px rgba(50,50,50, 0.64);
+}
+
+.landing-page .logo {
+  position: fixed;
+  left: 3.5vh;
+  top: 3.5vh;
+  width: 18.8vw;
+  height: 19.6vh;
+  background-image: url('../img/page-layouts/EvalNinja 1B_2.png');
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position : center center;
+}
+
+.landing-page .welcometext {
+  position: fixed;
+  left: 10.5vw;
+  top: 30.5vh;
+  width: 47.5vw;
+  height: 31.3vh;
+}
+
+.landing-page .welcometext p {
+  margin: 0 0.5vh;
+  width: 100%;
+  font-size: 52pt;
+  line-height: normal;
+  color: white;
+  text-shadow: 0 1px 0 #ccc,
+  0 2px 0 #c9c9c9,
+  0 3px 0 #bbb,
+  0 4px 0 #b9b9b9,
+  0 5px 0 #aaa,
+  0 6px 1px rgba(0,0,0,.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
+}
+
+.footer-menu {
+}
+
+.footer-menu .childmenu-item {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+.itemdiv {
+  position: absolute;
+  font-size: 16pt;
+  color: rgba(128, 128, 128, 0.81);
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.flex-gt-md .childmenu-item .itemdiv {
+  transform: translateY(100%);
+}
+
+.itemdiv:hover{
+  color: black;
+}
+
+
+/**fadein, fade out style**/
+
+.ng-hide-add.ng-hide-add-active
+{
+  animation: slideOutUp 0.2s both ease-in;
+}
+
+.ng-hide-remove.ng-hide-remove-active {
+  animation: slideInUp 0.2s both ease-in;
+}
+
+
+
+@keyframes slideInUp {
+  from { transform: translateY(100%); }
+  to {transform: translateY(0);}
+}
+
+@keyframes slideOutUp {
+  from { transform: translateY(0); }
+  to {transform: translateY(-100%);}
+}
+
+.md-toast.error {
+  background-color: red;
+}
+

@@ -1,0 +1,32 @@
+<div class="login-container" ng-class="{error: loginError}" ng-controller="AuthenticationController">
+  <p class="login-error"></p>
+  <form name="vm.userForm" ng-submit="signin(vm.userForm.$valid)" class="signin" novalidate autocomplete="off">
+    <div layout="column" class="login-dialog">
+      <div flex="20" class="login-logo">
+      </div>
+      <div flex layout="column" class="login-body">
+        <div flex class="login-input">
+          <md-input-container  style="width: 100%">
+            <input placeholder="Username/Email" type="text" id="username" name="username" ng-model="credentials.username" required>
+          </md-input-container>
+        </div>
+        <div flex class="login-input">
+          <md-input-container  style="width: 100%" >
+            <input placeholder="Password" type="password" id="password" name="password" ng-model="credentials.password" required>
+          </md-input-container>
+        </div>
+        <div flex>
+          <div layout="row" style="margin: auto; width: 170px">
+            <div class="ninja-logo"></div>
+            <md-button type="submit" class="button login-logo-btn">
+              LOGIN
+            </md-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <uib-alert type="danger" ng-show="error" class="text-center text-danger">
+    <span ng-bind="error"></span>
+  </uib-alert>
+</div>

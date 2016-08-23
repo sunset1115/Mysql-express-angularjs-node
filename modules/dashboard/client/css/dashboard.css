@@ -1,0 +1,72 @@
+.dashboard-page {
+	width: 100vw;
+	height: 100vh;
+}
+
+.dashboard-page .header {
+	background-image: url('../img/bg.png');
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position : center center;
+}
+
+.dashboard-page .header .logo-text {
+	margin-bottom: 0;
+    font-size: 40pt;
+    color: white;
+    line-height: 1.5;
+    text-shadow: 2px 0 0 #ccc,
+    			 0 0 0 #c9c9c9,
+    			 0 1px 0 #bbb,
+    			 0 2px 0 #b9b9b9,
+    			 0 3px 1px rgba(0,0,0,.7),
+    			 0 4px 2px rgba(0,0,0,.8);
+}
+
+.dashboard-page .header .email-text {
+	    /* margin: auto; */
+    margin-bottom: 0;
+    font-size: 20pt;
+    color: #dad6d6;
+    /* line-height: 3; */
+    text-shadow: 2px 2px 2px rgb(2, 2, 2);
+}
+
+.dashboard-page .header .signout-btn {
+	margin-top: 50%;
+    border: 1px solid grey;
+    background-color: rgb(230, 227, 227);    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;    
+    -webkit-box-shadow: 0 1px 2px rgb(27, 25, 22);
+    -moz-box-shadow: 0 1px 2px rgb(27, 25, 22);
+    -o-box-shadow: 0 1px 2px rgb(27, 25, 22);
+    box-shadow: 0 1px 2px rgb(27, 25, 22);
+}
+
+.dashboard-page .body {
+	/*border : 1px solid grey;*/
+}
+
+.dashboard-page .body .row-item{
+	border-bottom: 1px solid rgba(128, 128, 128, 0.68);
+}
+
+.dashboard-page .body .row-item:last-child{
+	border-bottom: 0;
+}
+
+.row-item .sub-title{
+	font-size: 25pt;
+    line-height: 2;
+}
+
+.row-item .sub-body {
+	font-size: 18pt;
+    color: rgba(162, 162, 162, 0.94);
+}

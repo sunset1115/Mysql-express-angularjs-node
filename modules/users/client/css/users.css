@@ -1,0 +1,134 @@
+@media (min-width: 992px) {
+  .nav-users {
+    position: fixed;
+  }
+}
+.social-account-container {
+  display: inline-block;
+  position: relative;
+}
+.btn-remove-account {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+.user-profile-picture {
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.login-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background-image: url('../img/bg.png');
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position : center center;
+}
+
+.login-container.error p.login-error {
+  display: block;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  padding: 1em;
+  margin: 0.2em;
+
+  background: #FDD;
+  border: 1px solid #964040;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  -khtml-border-radius: 0.25em;
+  text-align: center;
+  color: #964040;
+}
+
+.login-container .login-dialog {
+  width: 25vw;
+  height: 40vh;
+  margin: auto;
+  margin-top: 25vh;
+  z-index: 999;
+}
+
+.login-container .login-dialog .login-logo {
+  background-image: url('../img/EvalNinja 1B_2_words.png');
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position : center center;
+}
+
+.login-container .login-dialog .login-body {
+  margin-top: 2vh;
+  background: white;
+  border: 1px solid rgba(128, 128, 128, 0.73);
+  border-radius: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 5vh;
+}
+
+.login-body .ninja-logo {
+  width: 70px;
+  height: 70px;
+  margin-right: -20px;
+  background-image: url('../img/EvalNinja_1B_2_face_with_eyes.png');
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position : center center;
+  z-index: 25;
+}
+
+.login-body .login-input{
+  text-align: center;
+  width: 100%;
+}
+
+.login-body .login-logo-btn {
+  border: 1px solid grey;
+  border-radius: 10px;
+  z-index: 22;
+  height: 40px;
+  margin-top: 20px;
+  font-size: 16pt;
+  width: 100px;
+}
+
+.login-container .alert-danger {
+  width: 25vw;
+  margin: auto;
+}

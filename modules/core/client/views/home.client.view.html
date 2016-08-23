@@ -1,0 +1,52 @@
+<!--
+   Copyright (C) 2016-06-13 David
+
+   Landing page template
+-->
+
+
+<div layout="column" class="landing-page" ng-class="{loading: !isLoaded()}" >
+  <div flex class="main-container">
+    <div layout="row" class="header-menu">
+      <div class="header-button" layout="column" ng-repeat="menuitem in vm.mainmenu" ng-click="vm.goProperState(menuitem.link)">
+        <div flex class="title-div">
+          {{menuitem.caption}}
+        </div>
+        <div class="header-fixline"></div>
+      </div>
+      <div flex style="text-align: right">
+        <md-button class="button login-btn" ng-show="!authentication.user" ng-click="vm.goProperState('authentication.signin')">
+          Login
+        </md-button>
+        <a href="/api/auth/signout" target="_self"  ng-hide="!authentication.user">
+          <md-button class="button login-btn">
+            Log out
+          </md-button>
+        </a>
+      </div>
+    </div>
+    <div class="logo"></div>
+    <div class="welcometext">
+      <p>Virtual Evaluate</p>
+      <p>Computer Security</p>
+      <p>Candidates</p>
+    </div>
+  </div>
+  <div flex="10" flex-gt-md="10vh" layout="row" class="footer-menu">
+    <div flex class="childmenu-item" ng-click="go('started')">
+      <div class="itemdiv">Getting Started</div>
+    </div>
+    <div flex class="childmenu-item" ng-click="go('about')">
+      <div class="itemdiv">About Us</div>
+    </div>
+    <div flex class="childmenu-item" ng-click="go('browse')">
+      <div class="itemdiv">Browse</div>
+    </div>
+    <div flex class="childmenu-item" ng-click="go('faq')">
+      <div class="itemdiv">FAQ</div>
+    </div>
+    <div flex class="childmenu-item" ng-click="go('legal')">
+      <div class="itemdiv">Legal</div>
+    </div>
+  </div>
+</div>

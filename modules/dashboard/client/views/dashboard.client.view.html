@@ -1,0 +1,72 @@
+<!--
+   Copyright (C) 2016-06-15 David
+
+   Landing page template
+-->
+
+
+<div layout="column" class="dashboard-page">
+  <div flex="20" layout="row" class="header">
+    <div flex="10"></div>
+    <div flex layout="column">
+      <div flex="30"></div>
+      <div flex="50" layout="column">
+        <div flex="70" class="logo-text">Bret Padres</div>
+        <div flex="20" class="email-text">bret@killerhippo.com</div>
+        <div flex></div>
+      </div>
+      <div flex></div>
+    </div>
+    <div flex="10">
+      <md-button class="button signout-btn" ng-click="vm.logout()">
+        Sign Out
+      </md-button>
+    </div>
+    <div flex="10"></div>
+  </div>
+  <div flex layout="row" class="body">
+    <div flex="10"></div>
+    <div flex layout="column">
+      <div flex="35" layout="column" class="row-item">
+        <div flex="30" class="sub-title">Job Title</div>
+        <div flex="40" class="sub-body">
+          <md-grid-list md-cols-gt-lg="4" md-cols="3" md-cols-gt-md="3" md-cols-md="2" md-row-height="7vh">
+            <md-grid-tile ng-repeat="job in vm.jobs">
+              <div ng-click="onJobClick(job)">
+                {{job.title}}
+              </div>
+            </md-grid-tile>              
+          </md-grid-list>
+        </div>
+        <div flex="30"></div>
+      </div>
+      <div flex="35" layout="column" class="row-item">
+        <div flex="30" class="sub-title">Candidates</div>
+        <div flex="40" class="sub-body">
+          <md-grid-list md-cols-gt-lg="6" md-cols="3" md-cols-gt-md="5" md-cols-md="4" md-row-height="7vh">
+            <md-grid-tile ng-repeat="candidate in vm.candidates">
+              <div ng-click="onCandidateClick(candidate)">
+                {{candidate.name}}
+              </div>
+            </md-grid-tile>              
+          </md-grid-list>
+        </div>
+        <div flex="30"></div>
+      </div>
+      <div flex layout="column" class="row-item">
+        <div flex="30" class="sub-title">Accounts</div>
+        <div flex="40" class="sub-body">
+          <md-grid-list md-cols-gt-lg="6" md-cols="3" md-cols-gt-md="5" md-cols-md="4" md-row-height="7vh">
+            <md-grid-tile ng-repeat="account in accounts">
+              <div ng-click="onAccountClick(account)">
+                {{account.theme}}
+              </div>
+            </md-grid-tile>              
+          </md-grid-list>
+        </div>
+        <div flex="30"></div>
+      </div>
+    </div>
+    <div flex="10"></div>
+  </div>
+</div>
